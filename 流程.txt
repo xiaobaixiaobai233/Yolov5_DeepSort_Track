@@ -1,0 +1,25 @@
+# 创建名为yolov5_deepsort的环境，指定Python版本（3.8-3.10兼容性较好）
+conda create -n yolov5_deepsort python=3.8 -y
+
+# 激活环境
+conda activate yolov5_deepsort  # Windows/Linux/Mac通用
+
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+pip install -r requirements.txt
+
+pip uninstall numpy
+pip install numpy==1.23.5  # 选择一个未废弃该别名的版本
+
+
+#功耗实时追踪
+pip install nvitop  # 或直接用系统自带的nvidia-smi
+
+#csv作图
+pip install matplotlib pandas
+
+#追踪
+python track_time_power.py --source ./group_walk3.mp4 --fourcc mp4v
+
+#作图
+python power_figure.py
