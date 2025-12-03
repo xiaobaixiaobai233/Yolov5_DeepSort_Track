@@ -4,7 +4,7 @@ This article will introduce how to use YOLOv5 and DeepSort for object detection 
 # 2. Effect Demonstration  
 ![man-min.gif](https://z4a.net/images/2023/08/25/man-min.gif)  
 
-# 3. How to Use  
+# 3. How to implement object tracking and power mapping  
 ### (1) First, download the code:  
 `https://github.com/xiaobaixiaobai233/Yolov5_DeepSort_Track.git`  
 
