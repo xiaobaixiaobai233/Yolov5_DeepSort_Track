@@ -10,7 +10,7 @@ This article will introduce how to use YOLOv5 and DeepSort for object detection 
 
 The YOLOv5 original pre-trained model `yolov5s.pt` and the pedestrian re-identification model `ckpt.t7` are required; file size limits prevent uploading these files.  
 
-### (2) Set up the virtual environment and configurations according to the process steps  
+### (2) Set up the virtual environment and configurations according to the process.txt  
 
 ### (3) Next, modify parameters in the `track.py` file:  
 Update parameters to your own video file path and YOLOv5 pre-trained model path. Set the encoding format to `mp4v` to ensure saved MP4 files are playable. Run with the following command:  
