@@ -12,7 +12,7 @@ The YOLOv5 original pre-trained model `yolov5s.pt` and the pedestrian re-identif
 
 ### (2) Set up the virtual environment and configurations according to the process.txt  
 
-### (3) Next, modify parameters in the `track.py` file:  
+### (3) Next, modify parameters in the `track_time_power.py` file:  
 Update parameters to your own video file path and YOLOv5 pre-trained model path. Set the encoding format to `mp4v` to ensure saved MP4 files are playable. Run with the following command:  
 
 `python track_time_power.py --source ./group_walk3.mp4 --fourcc mp4v`  
