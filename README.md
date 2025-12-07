@@ -1,8 +1,9 @@
 # 1. Introduction  
 This article will introduce how to use YOLOv5 and DeepSort for object detection and tracking, with the addition of trajectory line display. Improvements in this article include matching trajectory line colors with bounding boxes, optimizing trajectory lines to show only a segment, and hiding trajectory lines when objects disappear.  
 
+While completing object tracking and real-time power consumption detection, this solution integrates key motion-related features of the objects themselves with power consumption data to achieve real-time switching of detection models. This approach reduces the device's power consumption while ensuring no impact on tracking accuracy, thereby meeting the corresponding industrial requirements.
 # 2. Effect Demonstration  
-![man-min.gif](https://z4a.net/images/2023/08/25/man-min.gif)  
+![demo.png](walking_demo.png)  
 
 # 3. How to implement object tracking and power mapping  
 ### (1) First, download the code:  
@@ -18,6 +19,11 @@ Update parameters to your own video file path and YOLOv5 pre-trained model path.
 `python track_time_power.py --source ./group_walk3.mp4 --fourcc mp4v`  
 
 Finally, you can view the object detection and tracking results, with each object’s trajectory line matching its bounding box. Trajectory lines disappear when objects vanish, ensuring clearer visualization of each object’s movement path.  
+
+### (4) Download the corresponding library functions and run the `power_figure.py` file:
+The original trace file already used NVIDIA's built-in library functions to extract GPU power consumption intervals and created a `power_trace.csv` file. Now, line charts can be drawn from this file.
+
+![trace.png](trace.png)
 
 # 4. Reference Code Links  
 Special thanks to the author of this code:  
