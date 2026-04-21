@@ -86,7 +86,9 @@ The threshold value for T here can also be set according to the environment.
 ---
 # 4. Experimental results
 
-### (1) Detectors Comparison
+### (1) Ablation experiement on Different Detectors
+![compare.png](compare.png)
+
 | Detectors       | Avg_Power (mW) | HOTA50 | Power (%) | HOTA (%) |
 |-----------------|----------------|--------|-----------|----------|
 | Yolov5s         | 2765.5         | 40.1   | -16.9     | -4.7     |
@@ -94,7 +96,10 @@ The threshold value for T here can also be set according to the environment.
 | Yolov5s+m       | 2800.8         | 40.7   | -15.8     | -3.3     |
 | Yolov5s+m+l+x   | 2977.7         | 42.2   | -10.5     | +0.1     |
 
-### (2) Ablation Study on Different Perception Elements
+### (2) Ablation experiement on Different Perception Elements
+![compare2.png](compare2.png)
+
+
 | Elements_add       | Avg_Power (mW) | HOTA50 | Power (%) | HOTA (%) |
 |--------------------|----------------|--------|-----------|----------|
 | (base)             | 3327.3         | 42.1   | 0         | 0        |
