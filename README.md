@@ -43,6 +43,7 @@ We utilize **Sensitivity Coefficients** to bias the system toward specific opera
 The parameters here can be adjusted appropriately for different environments.
 
 By comparing the power consumption and accuracy of grid search with fixed weights, and considering the points with dynamic weights, we can calculate how many fixed weights are exceeded, and then set a sensitivity index to ensure the model's robustness.
+![Pareto_Frontier.png](Pareto_Frontier.png)
 
 ### （4） Dynamic Weight Generation
 AS-YOLO employs a self-attention-inspired mechanism to distribute importance dynamically. We utilize a **Softmax-based function** to calculate the optimal weight vector $W$:
