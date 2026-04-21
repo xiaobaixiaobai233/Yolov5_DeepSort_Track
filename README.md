@@ -10,9 +10,16 @@ While completing object tracking and real-time power consumption detection, this
 * **Adaptive Model Switching:** Dynamically toggles between high-precision and lightweight YOLOv5 models.
 * **Enhanced Visualization:** Trajectory colors match their respective bounding boxes; trajectory lines are segmented and automatically hidden when objects disappear.
 * **Power-Aware Inference:** Integrates real-time GPU power monitoring to guide detector selection.
+
 ---
 # 2. AS-YOLO Frameork
-![framework.svg](framework.svg){: width="800" }
+
+
+<p align="center">
+  <img src="framework.svg" width="990" alt="framework">
+  <br>
+  <em>Figure 1: The proposed Adaptive Selection YOLO (AS-YOLO) framework for efficient multi-object tracking.</em>
+</p>
 
 ---
 
