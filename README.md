@@ -10,10 +10,11 @@ While completing object tracking and real-time power consumption detection, this
 * **Adaptive Model Switching:** Dynamically toggles between high-precision and lightweight YOLOv5 models.
 * **Enhanced Visualization:** Trajectory colors match their respective bounding boxes; trajectory lines are segmented and automatically hidden when objects disappear.
 * **Power-Aware Inference:** Integrates real-time GPU power monitoring to guide detector selection.
+---
+# 2. AS-YOLO Frameork
 
 ---
-# 2. Core Methodology
-
+# 3. Core Algorithm
 The switching mechanism follows a five-stage pipeline designed for numerical stability, sensitivity to environmental changes, and decision stability.
 
 ### （1） Feature Extraction
@@ -73,7 +74,7 @@ The detector is selected according to the following rule based on the complexity
 The threshold value for T here can also be set according to the environment.
 
 ---
-# 3. How to implement object tracking and power mapping  
+# 4. How to implement object tracking and power mapping  
 ### (1) First, download the code:  
 `https://github.com/xiaobaixiaobai233/Yolov5_DeepSort_Track.git`  
 
@@ -94,9 +95,9 @@ The original trace file already used NVIDIA's built-in library functions to extr
 ![trace.png](trace.png)
 
 ---
-# 4. Effect Demonstration  
+# 5. Effect Demonstration  
 ![demo.png](walking_demo.png)  
 
-# 5. Reference Code Links  
+# 6. Reference Code Links  
 Special thanks to the author of this code:  
 [Deepsort tracking algorithm to draw object motion trajectories](https://blog.csdn.net/qq_35832521/article/details/115124521?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169269914116800222876736%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=169269914116800222876736&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-4-115124521-null-null.142%5Ev93%5EchatgptT3_2&utm_term=deepsort%20%E8%BD%A8%E8%BF%B9&spm=1018.2226.3001.4187)
