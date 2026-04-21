@@ -84,7 +84,28 @@ The detector is selected according to the following rule based on the complexity
 The threshold value for T here can also be set according to the environment.
 
 ---
-# 4. How to implement object tracking and power mapping  
+# 4. Experimental results
+
+### (1) Detectors Comparison
+| Detectors       | Avg_Power (mW) | HOTA50 | Power (%) | HOTA (%) |
+|-----------------|----------------|--------|-----------|----------|
+| Yolov5s         | 2765.5         | 40.1   | -16.9     | -4.7     |
+| Yolov5m (base)  | 3327.3         | 42.1   | 0         | 0        |
+| Yolov5s+m       | 2800.8         | 40.7   | -15.8     | -3.3     |
+| Yolov5s+m+l+x   | 2977.7         | 42.2   | -10.5     | +0.1     |
+
+### (2) Ablation Study on Different Perception Elements
+| Elements_add       | Avg_Power (mW) | HOTA50 | Power (%) | HOTA (%) |
+|--------------------|----------------|--------|-----------|----------|
+| (base)             | 3327.3         | 42.1   | 0         | 0        |
+| Power              | 3177.2         | 41.2   | -4.51     | -2.14    |
+| Accel+Power        | 3197.1         | 41.9   | -3.91     | -0.48    |
+| Num+Accel          | 3293.4         | 42.2   | +1.02     | +0.24    |
+| Num+Power          | 3451.2         | 42.0   | +3.72     | -0.24    |
+| Num+Accel+Power    | 3171.0         | 43.0   | -4.70     | +2.14    |
+
+---
+# 5. How to implement object tracking and power mapping  
 ### (1) First, download the code:  
 `https://github.com/xiaobaixiaobai233/Yolov5_DeepSort_Track.git`  
 
@@ -105,9 +126,9 @@ The original trace file already used NVIDIA's built-in library functions to extr
 ![trace.png](trace.png)
 
 ---
-# 5. Effect Demonstration  
+# 6. Effect Demonstration  
 ![demo.png](walking_demo.png)  
 
-# 6. Reference Code Links  
+# 7. Reference Code Links  
 Special thanks to the author of this code:  
 [Deepsort tracking algorithm to draw object motion trajectories](https://blog.csdn.net/qq_35832521/article/details/115124521?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169269914116800222876736%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=169269914116800222876736&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-4-115124521-null-null.142%5Ev93%5EchatgptT3_2&utm_term=deepsort%20%E8%BD%A8%E8%BF%B9&spm=1018.2226.3001.4187)
