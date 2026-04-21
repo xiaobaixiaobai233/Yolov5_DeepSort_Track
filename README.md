@@ -12,8 +12,10 @@ While completing object tracking and real-time power consumption detection, this
 * **Power-Aware Inference:** Integrates real-time GPU power monitoring to guide detector selection.
 ---
 # 2. AS-YOLO Frameork
+![framework.svg](framework.svg){: width="800" }
 
 ---
+
 # 3. Core Algorithm
 The switching mechanism follows a five-stage pipeline designed for numerical stability, sensitivity to environmental changes, and decision stability.
 
